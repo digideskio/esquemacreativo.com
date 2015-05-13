@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>ONE</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    
+	<!-- Style CSS -->
+	<link href="style.css" rel="stylesheet">
+    <!-- Customize CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+    <!-- Theme Option CSS -->
+    <link rel="stylesheet" href="css/theme-options.css" media="all">
+    <!-- Switch Style -->
+    <link rel="stylesheet" href="css/colors/default.css" type="text/css" id="colors" />
+    
+    
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="assets/js/html5shiv.js"></script>
+	  <script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="placeholders/ico/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="placeholders/ico/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="placeholders/ico/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="placeholders/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="placeholders/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="placeholders/ico/apple-touch-icon-144x144.png">
+</head>
+
+<body>
+    <div id="pageloader">
+        <div class="loader-item">
+            <img src="images/loading.gif" alt='loader' />
+        </div>
+    </div>
+    <!--end:preloader-->
+    
+<!--wrapper-->
+<div class="wrapper">
+    <header>
+    <section class="topbar clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="t-left col-sm-6 clearfix">
+                <span>	<i class="fa fa-map-marker"></i> 1987 Blue Spruce Lane Laurel 20707</span>
+                <span>	<i class="fa fa-envelope"></i> <a href="mailto:hello@woorockets.com">hello@woorockets.com</a></span> 
+                <span>	<i class="fa fa-phone"></i> +1 234 567 890</span> 
+               </div><!--end:t-left-->
+               
+               <div class="t-right col-sm-6 clearfix">
+                    <ul class="nav">
+                      <li><a href="#loginBox"  data-toggle="modal">	<i class="fa fa-user"></i>	Login</a></li>
+                      <li class="tn-language"><a href="#">	<i class="fa fa-globe"></i>	Language</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> English</a></li>
+                            <li><a href="#"> French</a></li>
+                            <li><a href="#"> German</a></li>
+                            <li><a href="#"> Spanish</a></li>
+                         </ul>
+                      </li>
+                      <li class="itwm-header-cart">
+                        <a href="#cartBox">
+                                <i class="fa fa-shopping-cart"></i>
+                            <span class="amount">£400.00</span>
+                          </a>
+                          <div class="itwm-cart-content">
+                            <h4><strong>2 Item</strong> In The Shopping Cart</h4>
+                                <div class="widget_shopping_cart_content">
+                                <ul class="cart_list product_list_widget ">
+                                    <li>
+                                        <a href="shop-details.html">
+                                        <img class="attachment-shop_thumbnail wp-post-image" src="placeholders/shop/thumbs/p-1.jpg">
+                                        Nanami Briefcase
+                                        </a>
+                                        <span class="quantity">
+                                            1 × <span class="amount">£200.00</span>
+                                        </span>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="shop-details.html">
+                                        <img class="attachment-shop_thumbnail wp-post-image" src="placeholders/shop/thumbs/p-2.jpg">
+                                        Briefcase
+                                        </a>
+                                        <span class="quantity">
+                                            1 × <span class="amount">£200.00</span>
+                                        </span>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                   <p class="total">
+                                        <strong>Subtotal:</strong>
+                                        <span class="amount">£400.00</span>
+                                </p>
+                                <p class="buttons">
+                                        <a class="button wc-forward" href="shop-viewcart.html">View Cart</a>
+                                        <a class="button checkout wc-forward" href="shop-checkout.html">Checkout</a>
+                                </p>
+                                </div>
+                          </div>
+                      </li>
+                  </ul>
+    
+               </div><!--end:t-right-->
+               
+               
+               <!--modal login box-->
+               <div class="modal fade" id="loginBox">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Member Area</h4>
+                      </div>
+                      <div class="modal-body row">
+                      
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        		<p>
+                                <label for="username"> Username :</label>
+                                <input id="username" type="text" aria-required="true" size="30" value="" name="username">
+                            	</p>
+                             <p> <a href="#">» Creat new account</a>	</p>   
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        		<p>
+                                <label for="password"> Password :</label>
+                                <input id="password" type="password" aria-required="true" size="30" value="" name="password">
+                            	</p>
+                             <p> <a href="#">» Lost Password ?</a> 	</p>   
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-violet">Login</button>
+                      </div>
+                    </div>
+                  </div>
+               </div><!--end:loginBox-->
+                        
+            </div><!--end:row-->
+        </div>
+    </section><!--end:topbar-->
+         <div class="nav-container stickmenu clearfix">
+         <div class="inner">
+           <!-- logo -->
+                <a href="#" class="logo">
+                <img src="placeholders/main-logo.png"/> 
+               </a>
+           <!-- end:logo -->    
+            
+           <!-- main-menu -->
+           <ul class="main-menu">
+                <li class="multi-level-menu">
+                	<a href="index1.html">Home</a>
+                	<ul class="sub-menu">
+                      <li><a href="index1.html">	Home - Creative 1</a> </li>
+                      <li><a href="index2.html">	Home - Creative 2</a></li>
+                      <li><a href="index3.html">	Home - Creative 3</a></li>
+                      <li><a href="index4.html">	Home - Portfolio 1</a></li>
+                      <li><a href="shop.html">     Home - eCommerce 1</a></li>
+                      <li><a href="shop2.html">    Home - eCommerce 2</a></li>
+                      <li><a href="shop3.html">		Home - eCommerce 3</a></li>
+                      <li><a href="shop4.html">		Home - eCommerce 4</a></li>
+                      <li><a href="onepage.html">		OnePage 1</a></li>
+
+                  </ul>
+                </li>
+               <!--submenu-->
+               <li class="multi-level-menu">
+                <a href="#">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="aboutme.html">	<i class="fa fa-user"></i> About me</a></li>
+                      <li><a href="abouts.html">	<i class="fa fa-users"></i> About us</a></li>
+                      <li><a href="elements.html">	<i class="fa fa-wrench"></i> Services</a></li>
+                      <li><a href="404error.html">	<i class="fa fa-exclamation-triangle"></i> 404 error</a></li>
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="under.html">		<i class="fa fa-clock-o"></i> Under Construction</a>
+                      	<ul>
+                              <li><a href="under.html">			Animate Background</a> </li>
+                              <li><a href="under-image.html">		Image Background</a></li>
+                              <li><a href="under-slide.html">		Slideshow Background</a></li>
+                              <li><a href="under-video.html">		Video Background</a></li>
+                              <li><a href="under-parallax.html">	Parallax Background</a></li>
+                              <li><a href="under-gradient.html">	Gradient Background</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="faq.html">		<i class="fa fa-comments-o"></i> F.A.Q</a></li>
+                      <li><a href="contacts.html"><i class="fa fa-phone-square"></i> Contacts</a></li>
+                  </ul>	            	
+               </li>
+               <!--end: submenu-->
+               
+               <li class="multi-level-menu active">
+               	<a href="portfolio.html">Portfolio</a>
+               	<ul class="sub-menu">
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="portfolio.html"><i class="fa fa-picture-o"></i> Classic</a> 
+                      	<ul>
+                            <li><a href="port-class-full.html">Full width</a></li>
+                            <li><a href="portfolio.html">Four column</a></li>
+                            <li><a href="port-class-3col.html">Three column</a></li>
+                            <li><a href="port-class-2col.html">Two column</a></li>
+                        	</ul>
+                      </li>
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="#"><i class="fa fa-picture-o"></i> Classic no space</a> 
+                      	<ul>
+                            <li><a href="portfolio2.html">Full width</a></li>
+                            <li><a href="port-class2-4col.html">Four column</a></li>
+                            <li><a href="port-class2-3col.html">Three column</a></li>
+                            <li><a href="port-class2-2col.html">Two column</a></li>
+                        	</ul>
+                      </li>
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="port-masonry.html"><i class="fa fa-picture-o"></i>Masonry</a> 
+                      	<ul>
+                            <li><a href="port-masonry.html">Full width</a></li>
+                            <li><a href="port-masonry-boxed.html">Boxed layout</a></li>
+                        	</ul>
+                      </li>
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="port-single.html"><i class="fa fa-picture-o"></i> Single Portfolio</a> 
+                      	<ul>
+                            <li><a href="port-single.html">Standar item</a></li>
+                            <li><a href="port-s-video.html">Video item</a></li>
+                            <li><a href="port-s-audio.html">Audio item</a></li>
+                            <li><a href="port-s-gallery.html">Gallery item</a></li>
+                            <li><a href="port-s-full.html">Full witdh item</a></li>
+                            <li><a href="port-s-rsidebar.html">Item sidebar Right</a></li>
+                            <li><a href="port-s-lsidebar.html">Item sidebar Left</a></li>
+                        	</ul>
+                      </li>
+                  </ul>
+               </li>
+               <!--megamenu-->
+               <li class="mega-menu">
+                <a href="elements.html">Elements</a>
+                    <div class="inner">
+                    <div class="row">                        
+                    <!--col 1 -->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h3>Typography</h3>
+                      <ul class="menu">
+                        <li><a href="sc-columns.html">		<i class="fa fa-columns"></i> 		Columns</a></li>
+                        <li><a href="sc-heading.html">		<i class="fa fa-header"></i> 		Headings</a></li>
+                        <li><a href="sc-quote.html">		<i class="fa fa-quote-left"></i>		Blockquote</a></li>
+                        <li><a href="sc-dropcap.html">		<i class="fa fa-indent"></i> 			Dropcaps</a></li>  
+                        <li><a href="sc-highlight.html">	<i class="fa fa-magic"></i> 			Highlight</a></li> 
+                        <li><a href="sc-style-list.html">	<i class="fa fa-list-ul"></i> 		Custom list</a></li>
+                        <li><a href="sc-divider.html">		<i class="fa fa-ellipsis-h"></i>  	Divider</a></li>
+                      </ul>  
+                    </div>
+                    <!--end: col 1 -->
+                    
+                    <!--col 2-->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                          <h3>Common</h3>
+                          <ul class="menu">
+                            <li><a href="sc-tabs.html">						<i class="fa fa-folder-o"></i> 						Tabs</a></li>
+                            <li><a href="sc-accordion.html">		<i class="fa fa-caret-square-o-right"></i>		Accordion / Toggle</a></li>
+                            <li><a href="sc-social-icon.html">	<i class="fa fa-share-alt"></i> 						Social icons</a></li>
+                            <li><a href="sc-button.html">			<i class="fa fa-square-o"></i> 					Button</a></li>
+                            <li><a href="sc-messsage-box.html">	<i class="fa fa-comment-o"></i>  					Message boxed / Alert</a></li>  
+                            <li><a href="sc-table.html">			<i class="fa fa-table"></i> 						Pricing table</a></li>
+                            <li><a href="sc-call-action.html">	<i class="fa fa-mail-reply-all"></i> 			Callout box</a></li>
+                          </ul>  
+                    </div>
+                    <!--end: col 2-->
+                    
+                    <!--col 3 -->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                          <h3>interactive</h3>
+                          <ul class="menu">
+                            <li><a href="sc-gallery.html">				<i class="fa fa-picture-o"></i> 					Gallery</a></li>
+                            <li><a href="sc-testimonials.html">			<i class="fa fa-quote-right"></i> 	 			Testimonials</a></li>
+                            <li><a href="sc-services.html">				<i class="fa fa-wrench"></i>						Services </a></li>  
+                            <li><a href="sc-customer-logo.html">			<i class="fa fa-user"></i>						Customer logos</a></li>  
+                            <li><a href="sc-post.html">					<i class="fa fa-pencil-square-o"></i>			Latest posts</a></li>
+                            <li><a href="sc-team.html">					<i class="fa fa-users"></i>						Team members</a></li>
+                            <li><a href="sc-image-banner.html">			<i class="fa fa-picture-o"></i>					Image banner</a></li>
+                          </ul>  
+                    </div>
+                    <!--end: col 3-->
+                    
+                    <!--col 4-->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                          <h3>Infographics & Media</h3>
+                          <ul class="menu">
+                            <li><a href="sc-progress.html">			<i class="fa fa-tasks"></i> Progressbar</a></li>
+                            <li><a href="sc-steps.html">				<i class="fa fa-list-ol"></i> Process steps</a></li>                            
+                            <li><a href="sc-counters.html">			<i class="fa fa-info-circle"></i> Counters</a></li>
+                            <li><a href="sc-player.html">				<i class="fa fa-play-circle-o"></i> Html5 player</a></li>
+                            <li><a href="sc-soundcloud.html">			<i class="fa fa-soundcloud"></i> Soundcloud</a></li>
+                            <li><a href="sc-countdown.html">			<i class="fa fa-history"></i> Countdown</a></li>
+                          </ul>  
+                    </div>
+                    <!--end: col 4-->
+                  </div> <!--end: row -->  
+                  </div> <!--end: inner -->
+               </li>
+               <!--end:megamenu-->
+               <li class="multi-level-menu">
+                <a href="#">Features</a>
+                    <ul class="sub-menu">
+                      
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="#">		<i class="fa fa-header"></i> Header option</a>
+                      	<ul>
+                              <li><a href="features-header-dark.html">			Dark style</a> </li>
+                              <li><a href="features-header-glass.html">			Transparent background</a></li>
+                              <li><a href="features-header-v-left.html">			Vertical left menu </a></li>
+                              <li><a href="features-header-v-right.html">		Vertical right menu </a></li>
+                              <li><a href="features-header1.html">				Clean style</a></li>
+                          </ul>
+                      </li>
+                  </ul>	            	
+               </li>
+               <!--end: submenu-->
+                              
+               <li class="multi-level-menu">
+                	<a href="blog.html">Blog</a>
+                	<ul class="sub-menu">
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="#"> Blog Classic</a> 
+                      	<ul class="menu">
+                            <li><a href="blog-full.html">Blog no sidebar</a></li>
+                            <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                            <li><a href="blog.html"> Blog right sidebar</a></li>
+                        	</ul>
+                      </li>
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="blog-masonry.html"> Blog Masonry</a> 
+                      	<ul class="menu">
+                            <li><a href="blog-masonry.html">Full width</a></li>
+                            <li><a href="blog-man-boxed.html">Boxed content</a></li>
+                            <li><a href="blog-man-big.html">Only big post</a></li>
+                            <li><a href="blog-man-small.html">Only small post</a></li>
+                        	</ul>
+                      </li>
+                      <li>
+                      	<span class="arrow"></span>
+                      	<a href="blog-post.html"> Blog post</a> 
+                      	<ul class="menu">
+                            <li><a href="blog-post.html">Single image</a></li>
+                            <li><a href="blog-post-full.html">Fullwidth blogpost</a></li>
+                        	</ul>
+                      </li>
+                  </ul>
+                </li>
+               
+               <li class="multi-level-menu">
+                	<a href="shop.html">Shop</a>
+                	<ul class="sub-menu">
+                      <li><a href="shop-cat.html">		<i class="fa fa-list-ul"></i> Category</a></li>
+                      <li><a href="shop-details.html">	<i class="fa fa-umbrella"></i> Details</a></li>
+                  </ul>
+                </li>
+                
+                
+               <li>
+                <form id="search-form">
+                    <input type="search" placeholder="Search" value="">
+                </form>
+               </li>
+           </ul>
+           <!-- end:main-menu -->
+           
+           
+           <div id="mobile-menu" class="dl-menuwrapper">
+                <button class="dl-trigger"><i class="fa fa-bars"></i></button>
+                <ul class="dl-menu">
+                    <li>
+                        <a href="#">Home</a>
+                        <ul class="dl-submenu">
+                            <li><a href="index1.html">	Home - Creative 1</a> </li>
+                      <li><a href="index2.html">	Home - Creative 2</a></li>
+                      <li><a href="index3.html">	Home - Creative 3</a></li>
+                      <li><a href="index4.html">	Home - Portfolio 1</a></li>
+                      <li><a href="shop.html">     Home - eCommerce 1</a></li>
+                      <li><a href="shop2.html">    Home - eCommerce 2</a></li>
+                      <li><a href="shop3.html">		Home - eCommerce 3</a></li>
+                      <li><a href="shop4.html">		Home - eCommerce 4</a></li>
+                      <li><a href="onepage.html">		OnePage 1</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li>
+                        <a href="#">Pages</a>
+                        <ul class="dl-submenu">
+                            <li><a href="aboutme.html">	<i class="fa fa-user"></i> About me</a></li>
+                            <li><a href="abouts.html">		<i class="fa fa-users"></i> About us</a></li>
+                            <li><a href="elements.html">	<i class="fa fa-wrench"></i> Services</a></li>
+                            <li><a href="404error.html">	<i class="fa fa-exclamation-triangle"></i> 404 error</a></li>
+                            <li>
+                            <a href="under.html">			<i class="fa fa-clock-o"></i> Under Construction</a>
+                              <ul class="dl-submenu">
+                                  <li><a href="under.html">			Animate Background</a> </li>
+                                  <li><a href="under-image.html">		Image Background</a></li>
+                                  <li><a href="under-slide.html">		Slideshow Background</a></li>
+                                  <li><a href="under-video.html">		Video Background</a></li>
+                              <li><a href="under-parallax.html">	Parallax Background</a></li>
+                              <li><a href="under-gradient.html">	Gradient Background</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="faq.html">		<i class="fa fa-comments-o"></i> F.A.Q</a></li>
+                            <li><a href="contacts.html"><i class="fa fa-phone-square"></i>  Contacts</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li>
+                        <a href="#">Portfolio</a>
+                       <ul class="dl-submenu">
+                          <li>
+                            <a href="portfolio.html"><i class="fa fa-picture-o"></i> Classic</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="port-class-full.html">Full width</a></li>
+                                <li><a href="portfolio.html">Four column</a></li>
+                                <li><a href="port-class-3col.html">Three column</a></li>
+                                <li><a href="port-class-2col.html">Two column</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-picture-o"></i> Classic no space</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="portfolio2.html">Full width</a></li>
+                                <li><a href="port-class2-4col.html">Four column</a></li>
+                                <li><a href="port-class2-3col.html">Three column</a></li>
+                                <li><a href="port-class2-2col.html">Two column</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="port-masonry.html"><i class="fa fa-picture-o"></i>Masonry</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="port-masonry.html">Full width</a></li>
+                                <li><a href="port-masonry-boxed.html">Boxed layout</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="port-single.html"><i class="fa fa-picture-o"></i> Single Portfolio</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="port-single.html">Standar item</a></li>
+                                <li><a href="port-s-video.html">Video item</a></li>
+                                <li><a href="port-s-audio.html">Audio item</a></li>
+                                <li><a href="port-s-gallery.html">Gallery item</a></li>
+                                <li><a href="port-s-full.html">Full witdh item</a></li>
+                                <li><a href="port-s-rsidebar.html">Item sidebar Right</a></li>
+                                <li><a href="port-s-lsidebar.html">Item sidebar Left</a></li>
+                            </ul>
+                          </li>
+                      </ul>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="elements.html">Elements</a>
+                       <ul class="dl-submenu">
+                          <li>
+                            <a href="portfolio.html">Typography</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="sc-columns.html">		<i class="fa fa-columns"></i> 			Columns</a></li>
+                                <li><a href="sc-heading.html">		<i class="fa fa-header"></i> 		Headings</a></li>
+                                <li><a href="sc-quote.html">		<i class="fa fa-quote-left"></i>		Blockquote</a></li>
+                                <li><a href="sc-dropcap.html">		<i class="fa fa-indent"></i> 			Dropcaps</a></li>  
+                                <li><a href="sc-highlight.html">	<i class="fa fa-magic"></i> 			Highlight</a></li> 
+                                <li><a href="sc-style-list.html">	<i class="fa fa-list-ul"></i> 		Custom list</a></li>
+                                <li><a href="sc-divider.html">		<i class="fa fa-ellipsis-h"></i>  	Divider</a></li>
+                             </ul>
+                          </li>
+                          <li>
+                            <a href="portfolio.html">Common</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="sc-tabs.html">						<i class="fa fa-folder-o"></i> 						Tabs</a></li>
+                                <li><a href="sc-accordion.html">		<i class="fa fa-caret-square-o-right"></i>			Accordion / Toggle</a></li>
+                                <li><a href="sc-social-icon.html">		<i class="fa fa-share-alt"></i> 						Social icons</a></li>
+                                <li><a href="sc-button.html">			<i class="fa fa-square-o"></i> 						Button</a></li>
+                                <li><a href="sc-messsage-box.html">		<i class="fa fa-comment-o"></i>  					Message boxed / Alert</a></li>  
+                                <li><a href="sc-table.html">			<i class="fa fa-table"></i> 						Pricing table</a></li>
+                                <li><a href="sc-call-action.html">	<i class="fa fa-mail-reply-all"></i> 			Callout box</a></li>
+                             </ul>
+                          </li>
+                          <li>
+                            <a href="portfolio.html">Interactive</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="sc-gallery.html">				<i class="fa fa-picture-o"></i> 					Gallery</a></li>
+                                <li><a href="sc-testimonials.html">			<i class="fa fa-quote-right"></i> 	 			Testimonials</a></li>
+                                <li><a href="sc-services.html">				<i class="fa fa-wrench"></i>					Services </a></li>  
+                                <li><a href="sc-customer-logo.html">			<i class="fa fa-user"></i>						Customer logos</a></li>  
+                                <li><a href="sc-post.html">					<i class="fa fa-pencil-square-o"></i>			Latest posts</a></li>
+                                <li><a href="sc-team.html">					<i class="fa fa-users"></i>						Team members</a></li>
+                                <li><a href="sc-image-banner.html">			<i class="fa fa-picture-o"></i>					Image banner</a></li>
+                             </ul>
+                          </li>
+                          
+                          <li>
+                            <a href="portfolio.html">Infographics & Media</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="sc-progress.html">			<i class="fa fa-tasks"></i> Progressbar</a></li>
+                                <li><a href="sc-steps.html">				<i class="fa fa-list-ol"></i> Process steps</a></li>                            
+                            <li><a href="sc-counters.html">			<i class="fa fa-info-circle"></i> Counters</a></li>
+                            <li><a href="sc-player.html">				<i class="fa fa-play-circle-o"></i> Html5 player</a></li>
+                            <li><a href="sc-soundcloud.html">			<i class="fa fa-soundcloud"></i> Soundcloud</a></li>
+                            <li><a href="sc-countdown.html">			<i class="fa fa-history"></i> Countdown</a></li>
+                             </ul>
+                          </li>
+                          
+                          
+                          
+                      </ul>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="blog.html">Blog</a>
+                        <ul class="dl-submenu">
+                          <li>
+                            <a href="#"> Blog Classic</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="blog-full.html">Blog no sidebar</a></li>
+                                <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                                <li><a href="blog.html"> Blog right sidebar</a></li>
+                                </ul>
+                          </li>
+                          <li>
+                            <a href="blog-masonry.html"> Blog Masonry</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="blog-masonry.html">Full width</a></li>
+                                <li><a href="blog-man-boxed.html">Boxed content</a></li>
+                                <li><a href="blog-man-big.html">Only big post</a></li>
+                                <li><a href="blog-man-small.html">Only small post</a></li>
+                                </ul>
+                          </li>
+                          <li>
+                            <a href="blog-post.html"> Blog post</a> 
+                            <ul class="dl-submenu">
+                                <li><a href="blog-post.html">Single image</a></li>
+                            <li><a href="blog-post-full.html">Fullwidth blogpost</a></li>
+                                </ul>
+                          </li>
+                      </ul>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="#">Shop</a>
+                        <ul class="dl-submenu">
+                          <li><a href="shop.html">				<i class="fa fa-shopping-cart"></i> Shop</a></li>
+                          <li><a href="shop-cat.html">			<i class="fa fa-list-ul"></i> Category</a></li>
+                          <li><a href="shop-details.html">	<i class="fa fa-umbrella"></i> Details</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+            </div><!-- /dl-menuwrapper -->
+           
+           
+        </div>
+        <!--end:inner-->
+        </div><!--end:nav-container-->
+    </header>
+    <!-- end:header -->
+    
+    <div class="page-header title-left">
+    	<div class="container">
+        	<div class="row">
+        	<div class="col-lg-12">
+       			<h1>Portfolio</h1>
+               	<ul class="breadcrumb">
+                  	<li><a href="index1.html">Home</a></li>
+                		<li><a href="portfolio.html">Portfolio</a></li>
+               		<li>Portfolio details</li>
+               </ul>  
+        	</div>
+           </div><!--end:row--> 
+       </div>
+    </div><!--end:page-title--> 
+    
+    <div class="pro-title-bar">
+    	<div class="container">
+       		<h3><img src="placeholders/portfolio/p5-80x80.jpg"> Airplan icon design</h3>
+           <ul>
+           	<li><a href="port-s-audio.html"><i class="fa fa-angle-right"></i></a></li>
+            	<li><a href="port-grid.html"><i class="fa fa-th"></i></a></li>
+           	<li><a href="port-s-video.html"><i class="fa fa-angle-left"></i></a></li>
+           </ul> 
+       	</div>
+    </div><!--end:pro-title-bar-->
+    
+    <div id="main">
+    	<div class="container">
+        	<div class="row portfolio-single">
+           	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 port-images">
+            		<a href="placeholders/portfolio/photo/5.jpg" class="prettyPhoto"><img src="placeholders/portfolio/photo/5.jpg"></a>
+            	</div>
+            
+            	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 portfolio-single-content">
+              		<div class="share">
+                  	  <div class="socials">
+                            <a href="#" class="facebook">		<i class="fa fa-facebook"></i> 		<span>facebook</span></a>
+                            <a href="#" class="twitter">		<i class="fa fa-twitter"></i> 		<span>twitter</span></a>
+                            <a href="#" class="pinterest">		<i class="fa fa-pinterest"></i> 		<span>Pinterest</span></a>
+                            <a href="#" class="dribbble">		<i class="fa fa-dribbble"></i> 		<span>dribbble</span></a>
+                            <a href="#" class="rss">			<i class="fa fa-rss"></i> 			<span>Rss</span></a>
+                      </div>
+                      <div class="like-button">
+                      	<a href="#"><i class="fa fa-heart"></i></a>
+                        	<span>12</span>
+                      </div>
+                      <div class="clear"></div>
+                  </div><!--end:share-->
+                  <div class="text-heading pattern"> <h3>Description</h3> </div>
+                  <div class="desc">
+                  	<p>Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut, nam ad soleat alterum maluisset.Putent laoreet et ius utroque dissentias ut, nam ad soleat alterum maluisset laoreet.</p>
+                    	<p>Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus.</p>
+                  </div>  
+                  <div class="text-heading pattern"> <h3>Project Details</h3> </div>
+                  <ul class="li-standard l-arrow">
+                      <li><strong>CLIENT:</strong> Bravebits</li>
+                      <li><strong>TASK:</strong> Graphic Design, Web Design, icon Design</li>
+                      <li><strong>DATE:</strong> May 2014</li>
+                      <li><strong>PROGRAM:</strong> Pixelmator, Cinema 4D, Illustrator</li>
+                	</ul>
+                  <div class="action-group">
+                      <a href="#" class="btn btn-large btn-default btn-icon btn-line" type="button"> <i class="fa fa-link"></i> Visit Site </a>
+                      <a href="#"class="btn btn-large btn-default btn-icon btn-line" type="button"> <i class="fa fa-download"></i> Download </a>
+                  </div><!--end:button-group-->
+              </div><!--end:colright-->
+           </div><!--end:row-->
+           
+        </div><!--end:container-->
+    </div><!--end:main-->
+    
+    
+    <div class="related-projects">
+           
+            <div class="container">
+            	<div class="text-heading large-head">
+                <h1>Related Projects</h1>
+                <span>Nulla augue urna euismod ut bibendum ut eleifend non quam</span>
+            	</div>
+            </div><!--end:container-->
+                
+            <div class="list-pro nav-inside">
+            
+                <div class="s1-item">
+                    <div class="p-item">
+                        <div class="pthumb">
+                            <span class="triangle"></span>
+                            <div class="mask">
+                                <a href="placeholders/portfolio/photo/8.jpg" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
+                                <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
+                                <span class="glass"></span>   
+                            </div>
+                                <img src="placeholders/portfolio/photo/8.jpg">
+                        </div><!--end:pthumb-->
+                        </div><!--end:p-item-->
+                </div><!--end:item-->
+                
+                
+                <div class="s1-item">
+                    <div class="p-item">
+                        <div class="pthumb">
+                            <span class="triangle"></span>
+                            <div class="mask">
+                                <a href="placeholders/portfolio/photo/5.jpg" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
+                                <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
+                                <span class="glass"></span>   
+                            </div>
+                                <img src="placeholders/portfolio/photo/5.jpg">
+                        </div><!--end:pthumb-->
+                        </div><!--end:p-item-->
+                </div><!--end:item-->
+                
+                
+                <div class="s1-item">
+                    <div class="p-item">
+                        <div class="pthumb">
+                            <div class="mask">
+                                <a href="placeholders/portfolio/photo/3.jpg" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
+                                <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
+                                <span class="glass"></span>   
+                            </div>
+                                <img src="placeholders/portfolio/photo/3.jpg">
+                        </div><!--end:pthumb-->
+                        </div><!--end:p-item-->
+                </div><!--end:item-->
+                
+                
+                <div class="s1-item">
+                    <div class="p-item">
+                        <div class="pthumb">
+                            <div class="mask">
+                                <a href="placeholders/portfolio/photo/4.jpg" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
+                                <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
+                                <span class="glass"></span>   
+                            </div>
+                                <img src="placeholders/portfolio/photo/4.jpg">
+                        </div><!--end:pthumb-->
+                        </div><!--end:p-item-->
+                </div><!--end:item-->
+                
+                
+                <div class="s1-item">
+                    <div class="p-item">
+                        <div class="pthumb">
+                            <div class="mask">
+                                <a href="placeholders/portfolio/photo/10.jpg" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
+                                <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
+                                <span class="glass"></span>   
+                            </div>
+                                <img src="placeholders/portfolio/photo/10.jpg">
+                        </div><!--end:pthumb-->
+                        </div><!--end:p-item-->
+                </div><!--end:item-->
+                
+                
+                <div class="s1-item">
+                    <div class="p-item">
+                        <div class="pthumb">
+                            <div class="mask">
+                                <a href="placeholders/portfolio/photo/6.jpg" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
+                                <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
+                                <span class="glass"></span>   
+                            </div>
+                                <img src="placeholders/portfolio/photo/6.jpg">
+                        </div><!--end:pthumb-->
+                        </div><!--end:p-item-->
+                </div><!--end:item-->
+                
+                
+            </div>
+           </div><!--end:related-projects-->
+           
+           
+    
+    
+    <div class="action-box ab-flat">
+    	<center><a href="http://themeforest.net/item/one-multipurpose-parallax-html5-template/8469491?ref=woorockets" class="btn btn-large btn-violet btn-icon"> <i class="fa fa-shopping-cart"></i> Purchase ONE now </a></center>
+    </div><!--end:action-box-->
+    
+    
+    <footer>
+        <div class="container">
+        	<div id="footer-widgets" class="row clearfix">
+           	
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            		<aside class="widget">
+                    <h4 class="widget-title">Keep in touch</h4>
+                    <div class="text-widget"> <img src="placeholders/footer-logo.png" atl="footer-logo" class="logo-foot">
+                      <p>Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut, nam ad soleat alterum maluisset.Putent laoreet et ius utroque dissentias ut, nam ad soleat alterum maluisset laoreet.</p>
+                      <hr>
+                      <p>No.1 Abbey Road, London, W1 ECH <br>
+                    Call: +1 (0) 234 5678 90 <br>
+                    Email: <a href="mailto:support@woorockets.com">support@woorockets.com</a> </p>
+                    </div>
+              		</aside>
+           	</div> <!--end:col3-->
+            
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            		<aside class="widget clearfix">
+                    <h4 class="widget-title">Recent posts</h4>
+                    <div class="widget_recent_post">
+                          <ul>
+                        <li> <i class="fa fa-picture-o"></i> <a href="#"> Lorem ipsum dolor sit amet <span>January 4, 2014</span> </a> </li>
+                        <li> <i class="fa fa-play-circle-o"></i> <a href="#"> Nemo enim ipsam voluptatem... <span>January 4, 2014</span> </a> </li>
+                        <li> <i class="fa fa-picture-o"></i> <a href="#"> Quia ptas sit aspernatur samomo enim <span>January 4, 2014</span> </a> </li>
+                        <li> <i class="fa fa-play-circle-o"></i> <a href="#"> Lorem ipsum dolor consectetur <span>January 4, 2014</span> </a> </li>
+                        <li> <i class="fa fa-picture-o"></i> <a href="#"> Amazing post with all the goodies <span>January 4, 2014</span> </a> </li>
+                      </ul>
+                        </div>
+                    <!--end: widget_recent_post-->
+                    <div class="clear"></div>
+                  </aside>
+           	</div> <!--end:col3-->
+            
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            		<aside class="widget widget_galery_work clearfix">
+                    <h4 class="widget-title">Recent Projects</h4>
+                    <ul class="galery_work">
+                        <li><a href="placeholders/portfolio/photo/1.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p1-80x80.jpg"></a></li>
+                        <li><a href="placeholders/portfolio/photo/2.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p2-80x80.jpg"></a></li>
+                        <li><a href="placeholders/portfolio/photo/3.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p3-80x80.jpg"></a></li>
+                        <li><a href="placeholders/portfolio/photo/4.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p4-80x80.jpg"></a></li>
+                        <li><a href="placeholders/portfolio/photo/5.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p5-80x80.jpg"></a></li>
+                        <li><a href="placeholders/portfolio/photo/6.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p6-80x80.jpg"></a></li>
+                        <li><a href="placeholders/portfolio/photo/7.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p7-80x80.jpg"></a></li>
+                        <li><a href="placeholders/portfolio/photo/8.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p8-80x80.jpg"></a></li>
+                        <li><a href="placeholders/portfolio/photo/9.jpg" class="prettyPhoto"><img src="placeholders/portfolio/p9-80x80.jpg"></a></li>
+                    </ul><!--end:galery_work-->
+                    
+                    <div class="clear"></div> 
+                 </aside>
+           	</div> <!--end:col3-->
+            
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            		<aside class="widget widget_tagcloud clearfix">
+                    <h4 class="widget-title">Tag cloud</h4>
+                    <div class="tag-cloud-wrapper">
+                        <a href="#">woorockets</a> 
+                        <a href="#">inno </a> 
+                        <a href="#">k3nnyart</a> 
+                        <a href="#">wordpress</a> 
+                        <a href="#">photoshop</a> 
+                        <a href="#">joomlashine</a> 
+                        <a href="#">Template</a> 
+                        <a href="#">easy</a> 
+                        <a href="#">Html template</a> 
+                        <a href="#">Designer</a>
+                    </div>
+                    <div class="clear"></div> 
+                 </aside>
+           	</div> <!--end:col3-->
+            
+             
+           </div>
+        </div>
+    </footer><!--end:footer-->
+    
+    
+    <div class="copyright">
+    	 <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12">Copyright 2014 - One template by <a href="http://woorockets.com" target="_blank">woorockets.com</a>.  Powered by <a href="#" >Html5 & Css3</a></div>
+                <div class="col-lg-7 col-md-7 col-sm-12 clearfix">
+                	<div class="socials" style="float:right">
+                    <a href="#" class="facebook">		<i class="fa fa-facebook"></i> 		<span>facebook</span></a>
+                    <a href="#" class="twitter">		<i class="fa fa-twitter"></i> 		<span>twitter</span></a>
+                    <a href="#" class="linkedin">		<i class="fa fa-linkedin"></i> 		<span>linkedin</span></a>
+                    <a href="#" class="instagram">		<i class="fa fa-instagram"></i> 		<span>instagram</span></a>
+                    <a href="#" class="gplus">			<i class="fa fa-google-plus"></i> 	<span>google plus</span></a>
+                  </div> 
+                </div>
+            </div>
+        </div>
+    </div><!--end:copyright-->
+    <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i> </a>
+    
+</div> <!--end:wrapper-->
+	
+
+<!--jQuery-->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<!--Bootstrap-->    
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--Parallax-->
+	<script type="text/javascript" src="js/stellar.js"></script>
+<!--Fancy Select-->
+	<script type="text/javascript" src="js/fancySelect.js"></script>
+<!--jQuery Ui-->
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+<!--Pretty Photo-->
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--Header Sticky -->
+    <script type="text/javascript" src="js/waypoints.min.js" ></script>
+<!--Mobile Menu -->    
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+<!--Owl Carousel-->
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+<!--iSotope-->
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<!--Circle Chart-->
+	<script type="text/javascript" src="js/jquery.circliful.min.js"></script>         
+<!--scrollReveal-->
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+<!--Html5 player-->    
+    <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+<!--Countdown--> 
+    <script type="text/javascript" src="js/TimeCircles.js"></script>
+<!--Counter Up-->     
+    <script type="text/javascript" src="js/jquery-counterup.js"></script> 
+<!-- Responsive video -->
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<!--Flat Surface Shader -->     
+    <script type="text/javascript" src="js/fss.js"></script>
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>    
+<!--Onepage scroll-->     
+    <script type="text/javascript" src="js/jQuery-scrollnav.js"></script>        
+<!--Background video-->     
+    <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>             
+<!--Switch Style-->    
+    <script src="js/styleswitch.js"></script>          
+<!--Retina support-->
+	<script type="text/javascript" src="js/retina.js"></script>
+<!--Main Script-->
+	<script type="text/javascript" src="js/main.js"></script>  
+    
+
+
+</body>
+</html>
