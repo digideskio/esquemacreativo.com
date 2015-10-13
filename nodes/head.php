@@ -1,65 +1,79 @@
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!-- Begin Basic Needs Metadata -->
-<title><?php if(isset($meta_titulo)){ echo "".$meta_titulo; } ?> | esquemacreativo.com | esquemacreativo.com</title>
-<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-<meta content="es" http-equiv="content-language">
-<meta content="text/javascript" http-equiv="content-script-type">
-<meta content="text/css" http-equiv="content-style-type">
-<meta content="no" http-equiv="imagetoolbar">
-<meta content="<?php echo $meta_descripcion; ?> esquemacreativo.com" name="description">
-<meta name="author" content="Camilo Ruiz">
-<meta name="robots" content="index, follow">
-<meta name="revisit-after" content="3 month">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="document-rating" content="General" >
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="apple-touch-icon" sizes="57x57" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="http://static.esquemacreativo.com/content/private/images/ico/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="http://static.esquemacreativo.com/content/private/images/ico/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://static.esquemacreativo.com/content/private/images/ico/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="http://static.esquemacreativo.com/content/private/images/ico/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://static.esquemacreativo.com/content/private/images/ico/favicon-16x16.png">
-<link rel="manifest" href="http://static.esquemacreativo.com/content/private/images/ico/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="http://static.esquemacreativo.com/content/private/images/ico/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
-<?php if($_SERVER['SERVER_NAME'] == 'localhost'){?>
-	<base href="http://localhost/esquemacreativo.com/public_html/">
-<?php }else{ ?>
-	<base href="http://<?php $_SERVER['SERVER_NAME'] ?>">
-<?php } ?>
-<link rel="canonical" href="http://www.esquemacreativo.com" />
-<link rel="alternate" href="http://www.esquemacreativo.com" hreflang=”es-co” />
-<!-- Mobile Specific Meta -->
-<!-- End Metadata -->
-<!-- Begin Metadata Facebook -->
-<!--<meta content="Mejorando.la: Cursos online profesionales de tecnología" property="og:title">
-<meta content="website" property="og:type">
-<meta content="https://mejorando.la/" property="og:url">
-<meta content="Aprende desde cero a crear el futuro de la web. Cursos de programación, diseño, markerting, web, frontend, backend, móvil, UX, usabilidad. Con clases en vivo, diploma de certificación y maestros de la industria." property="og:description">
-<meta content="mejorando.la" property="og:site_name">
-<meta content="https://mejorando.la/static/images/home/mejorandola-facebook.jpg" property="og:image">
-<meta content="1030603473" property="fb:admins">
-<!-- End Metadata Facebook -->
-<!-- Begin Metadata Twitter -->
-<!--<meta name="twitter:card" content="nombre de la empresa" />
-<meta name="twitter:description" content="" />
-<meta name="twitter:site" content="@nombre de la empresa" />
-<meta name="twitter:title" content="nombre de la empresa" />
-<meta name="twitter:url" content="pagina web de la empresa" />
-<!-- End Metadata Twitter -->
-
-<?php require_once('includes/css.php'); ?>
+	<!-- Begin Basic Needs Metadata -->
+    <title>WIWUX MEDIA | Agencia de Marketing Digital <?php if(isset($meta_titulo)){ echo " | ".$meta_titulo; } ?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta content="es" http-equiv="content-language">
+    <meta content="text/javascript" http-equiv="content-script-type">
+    <meta content="text/css" http-equiv="content-style-type">
+    <meta content="no" http-equiv="imagetoolbar">
+    <meta content="<?php echo $meta_descripcion; ?>" name="description">
+    <meta content="<?php echo $meta_keywords; ?>" name="keywords">
+    <meta name="author" content="Camilo Ruiz | WIWUX MEDIA">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="3 month">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="document-rating" content="General" >
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <?php
+        if($_SERVER['SERVER_NAME'] == 'localhost'){
+        	
+        	echo('<base href="http://localhost/esquemacreativo.bl.ee/public_html/">');
+        	
+        }else{
+        	echo('<base href="http://'.$_SERVER['SERVER_NAME'].'">');
+        }
+        ?>
+    <!-- End Metadata -->
+		
+	<!-- CSS Stylesheets -->
+	
+	<!-- Latest compiled and minified CSS 
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/content/css/bootstrap.min.css">
+	
+	<!-Optional theme-> 
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/content/css/bootstrap-theme.min.css">
+	-->
+	
+	<!-- Bootstrap core CSS -->
+	<link href="content/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="content/css/rev-settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="content/css/extralayers.css" media="screen" />	
+	<!-- Style CSS -->
+	<link href="style.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Customize CSS -->
+	<link href="content/css/custom.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+	<link href="content/css/responsive.css" rel="stylesheet">
+    <!-- Theme Option CSS -->
+    <link rel="stylesheet" href="content/css/theme-options.css" media="all">
+    <!-- Switch Style -->
+    <link rel="stylesheet" href="content/css/colors/default.css" type="text/css" id="colors" />
+	
+	<!-- GOOGLE FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="placeholders/ico/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="placeholders/ico/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="placeholders/ico/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="placeholders/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="placeholders/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="placeholders/ico/apple-touch-icon-144x144.png">
+	
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="assets/js/html5shiv.js"></script>
+	  <script src="assets/js/respond.min.js"></script>
+	<![endif]-->
 </head>

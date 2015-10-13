@@ -6,6 +6,25 @@
 	<!-- Icon Fonts -->
 	<link href="../content/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 	
+	<!-- Bootstrap core CSS -->
+	<link href="content/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="content/css/rev-settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="content/css/extralayers.css" media="screen" />	
+	<!-- Style CSS -->
+	<link href="style.css" rel="stylesheet">
+    <!-- Customize CSS -->
+	<link href="content/css/custom.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+	<link href="content/css/responsive.css" rel="stylesheet">
+    <!-- Theme Option CSS -->
+    <link rel="stylesheet" href="content/css/theme-options.css" media="all">
+    <!-- Switch Style -->
+    <link rel="stylesheet" href="content/css/colors/default.css" type="text/css" id="colors" />
+	
+	<!-- GOOGLE FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+	
 	<!--[if lt IE 8]>
 	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->

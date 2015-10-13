@@ -10,6 +10,7 @@
 	
 <?php if($_SERVER['SERVER_NAME'] == 'localhost'){ ?>
 	<!-- JS Plugins -->
+	<script type="text/javascript" src="content/js/jquery-1.10.2.min.js"></script>
 	<script src="http://static.esquemacreativo.com/js/vendor/bootstrap.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js" ></script>
 	<script src="http://static.esquemacreativo.com/js/bootbox.js" ></script>
@@ -19,6 +20,121 @@
 	$(document).ready(function(){
 	$(".loader").fadeOut("slow");
 	})
+	</script>
+	
+	
+	<!--Parallax-->
+	<script type="text/javascript" src="content/js/stellar.js"></script>
+	<!--Fancy Select-->
+	<script type="text/javascript" src="content/js/fancySelect.js"></script>
+	<!--jQuery Ui-->
+	<script type="text/javascript" src="content/js/jquery-ui.js"></script>
+	<!--Pretty Photo-->
+	<script type="text/javascript" src="content/js/jquery.prettyPhoto.js"></script>
+	<!--Header Sticky -->
+	<script type="text/javascript" src="content/js/waypoints.min.js" ></script>
+	<!--Mobile Menu -->    
+	<script type="text/javascript" src="content/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="content/js/jquery.dlmenu.js"></script>
+	<!--Owl Carousel-->
+	<script type="text/javascript" src="content/js/owl.carousel.js"></script>
+	<!--iSotope-->
+	<script type="text/javascript" src="content/js/isotope.pkgd.min.js"></script>
+	<!--Google Map-->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>   
+	<!--Circle Chart-->
+	<script type="text/javascript" src="content/js/jquery.circliful.min.js"></script>         
+	<!--scrollReveal-->
+	<script type="text/javascript" src="content/js/scrollReveal.js"></script>
+	<!--Html5 player-->    
+	<script type="text/javascript" src="content/js/mediaelement-and-player.min.js"></script>
+	<!--Countdown--> 
+	<script type="text/javascript" src="content/js/TimeCircles.js"></script>
+	<!--Counter Up-->     
+	<script type="text/javascript" src="content/js/jquery-counterup.js"></script> 
+	<!-- Responsive video -->
+	<script type="text/javascript" src="content/js/jquery.fitvids.js"></script>
+	<!--Flat Surface Shader -->     
+	<script type="text/javascript" src="content/js/fss.js"></script>
+	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+	<script type="text/javascript" src="content/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="content/js/jquery.themepunch.revolution.min.js"></script>    
+	<!--Onepage scroll-->     
+	<script type="text/javascript" src="content/js/jQuery-scrollnav.js"></script>        
+	<!--Background video-->     
+	<script type="text/javascript" src="content/js/jquery.mb.YTPlayer.js"></script>             
+	<!--Switch Style-->    
+	<script src="content/js/styleswitch.js"></script>          
+	<!--Retina support-->
+	<script type="text/javascript" src="content/js/retina.js"></script>
+	<!--Main Script-->
+	<script type="text/javascript" src="content/js/main.js"></script> <!--Custom Script-->
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	    	$('#fade').list_ticker({
+	    		speed:6000,
+	    		effect:'fade'
+	    	});
+	    	$('#slide').list_ticker({
+	    		speed:2000,
+	    		effect:'slide'
+	    	});		
+	    })
+	</script>
+	<?php
+	    $month = date('m');
+	    if($month == 12){
+	     echo '<script src="content/js/snowstorm-min.js"></script>';
+	    }
+	    ?>
+	<script>
+	    window.onload = function () {
+	    
+	    'use strict';
+	    
+	    var latlng = new google.maps.LatLng(4.709624045758756, -74.0990997481323);
+	    var styles = [
+	    
+	    ];
+	    
+	    var myOptions = {
+	    zoom: 17,
+	    center: latlng,
+	    mapTypeId: google.maps.MapTypeId.ROADMAP,
+	    disableDefaultUI: true,
+	    scrollwheel: false,
+	    styles: styles
+	    };
+	    
+	    var contentString = '<div id="content">' +
+	    '<div id="siteNotice">' +
+	    '</div>' +
+	    '<h4>WIWUX</h4>' +
+	    '<p>Hola estamos esperandote!' +
+	    '</p>' +
+	    '</div>';
+	    
+	    var infowindow = new google.maps.InfoWindow({
+	    content: contentString
+	    });
+	    
+	    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+	    
+	    var myLatlng = new google.maps.LatLng(4.709624045758756, -74.0990997481323);
+	    
+	    var image = 'content/img/marker.png';
+	    var marker = new google.maps.Marker({
+	    position: myLatlng,
+	    map: map,
+	    title: 'Hello World!',
+	    icon: image
+	    });
+	    
+	    google.maps.event.addListener(marker, 'click', function () {
+	    infowindow.open(map, marker);
+	    });
+	    
+	    }
 	</script>
 	
 	<!-- JS Custom Codes --> 
