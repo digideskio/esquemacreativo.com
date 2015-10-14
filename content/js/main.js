@@ -1,4 +1,3 @@
-
 /* ==============================================
 * Translated default messages for the jQuery validation plugin.
 * Locale: ES
@@ -64,6 +63,9 @@ $(window).load(function() {
 	$(".loader-item").delay(300).fadeOut("slow");
 	$("#pageloader").delay(1200).fadeOut("slow");
 });
+
+
+
 
  /* ==============================================
 Home demo 2 - Revolution slider 

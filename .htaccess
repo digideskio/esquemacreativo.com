@@ -7,6 +7,37 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.(.*) [NC]
 RewriteRule ^(.*) http://%1/$1 [R=301,L]
 
+
+RewriteEngine On
+
+# for www.example.com/index.php?content=servicios&id=id
+RewriteCond %{THE_REQUEST} \?content=([^&]+)&cat=([^&]+)&ser=([^&\ ]+)
+RewriteRule ^ /%1/%2/%3? [L,R=301]
+
+# for www.example.com/index.php?page=namepage
+RewriteCond %{THE_REQUEST} \?content=([^&\ ]+)($|\ )
+RewriteRule ^ /%1? [L,R=301]
+
+# for www.example.com/index.php?content=servicios&cat=cat
+RewriteCond %{THE_REQUEST} \?content=([^&]+)&cat=([^&\ ]+)
+RewriteRule ^ /%1/%2? [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)$ /index.php?content=$1&cat=$2&ser=$3 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/([^/]+)$ /index.php?content=$1&cat=$2 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)$ /index.php?content=$1 [NC,L]
+
+
+
+
+
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.(.*) [NC]
 RewriteRule ^(.*)$ http://esquemacreativo.com/$1 [R=301,L]

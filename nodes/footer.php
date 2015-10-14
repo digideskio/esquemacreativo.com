@@ -84,6 +84,7 @@
 <script type="text/javascript" src="content/js/jquery-1.10.2.min.js"></script>
 <!--Bootstrap-->    
 <script type="text/javascript" src="content/js/bootstrap.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js" ></script>
 <!--Parallax-->
 <script type="text/javascript" src="content/js/stellar.js"></script>
 <!--Fancy Select-->

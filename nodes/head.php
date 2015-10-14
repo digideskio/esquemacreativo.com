@@ -20,7 +20,7 @@
     <?php
         if($_SERVER['SERVER_NAME'] == 'localhost'){
         	
-        	echo('<base href="http://localhost/esquemacreativo.bl.ee/public_html/">');
+        	echo('<base href="http://localhost/esquemacreativo.com/public_html/">');
         	
         }else{
         	echo('<base href="http://'.$_SERVER['SERVER_NAME'].'">');
