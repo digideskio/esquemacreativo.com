@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)$ https://2a24e00004c94a50ee6f7785b97f4391d88f7e17.googledrive.com/host/0B1_viaOS36Z7WDRYMF85SlNseHc/$1 [L,R=301]
+
+RedirectMatch 301 ^(.*)$ https://2a24e00004c94a50ee6f7785b97f4391d88f7e17.googledrive.com/host/0B1_viaOS36Z7WDRYMF85SlNseHc/$1
